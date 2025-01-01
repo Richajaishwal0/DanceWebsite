@@ -1,0 +1,96 @@
+//- index.pug
+doctype html
+html
+  head
+    title Dance Academy
+    style
+        include ../static/style.css
+  body
+    nav#navbar
+        ul  
+            li#logo
+                a(href='abc')
+                    img(src="../static/logo.jpeg" alt="logo")
+            li #[a(href='/') Home ]
+            li #[a(href='/about') About ]
+            li #[a(href='/class') Class ]
+            li #[a(href='/services') Services]
+            li #[a(href='/contact') Contact]
+    section#introSection
+        div.name RhythmSphere
+        hr.horizon
+        div.intro 
+            h2 Join Our Dance 
+                span.academy
+                    |Academy
+        div.small Where Passion Meets Dance! Join us to groove, grow, and shine.
+        div.btns
+            button.btn1(type="button" onclick="showForm()")
+                |Apply Now
+            button.btn2(type="button")
+                |Learn More
+    //- div
+    //-     form( action='/' id="form" method="post" ) 
+    //-             label(for="name") Name:
+    //-             br
+    //-             input#name(type="text" name="name" required)
+    //-             br
+    //-             br
+    //-             label(for="email") Email:
+    //-             br
+    //-             input#email(type="email" name="email" required)
+    //-             br
+    //-             br
+    //-             label(for="phone") Phone:
+    //-             br
+    //-             input#phone(type="tel" name="phone" required)
+    //-             br
+    //-             br
+    //-             button(type="submit") Submit    
+    
+
+
+    section#InfoSection
+        div.dance 
+            video(autoplay, loop, muted)
+                source(src="../static/bg.mp4",type="video/mp4")
+            h1 Why us? 
+            div.boxes1
+                div.design1
+                div.design2
+                div.design3
+                div.design4
+                div.design5
+                div.design6
+                div.design7
+        div.info
+            div.types#hiphop 
+                a(href='/about')
+                    img(src="../static/hiphop.jpg", alt="img1")
+            div.types#ballet
+                a(href='/about')
+                    img(src="../static/ballet.jpg", alt="")
+            div.types#contem
+                a(href='/about')
+                    img(src="../static/contem.jpg", alt="")
+            div.types#jazz
+                a(href='/about')
+                    img(src="../static/jazz.jpg", alt="")
+            div.types#tap
+                a(href='/about')
+                    img(src="../static/tap.jpg", alt="")
+            div.types#swing
+                a(href='/about')
+                    img(src="../static/swing.jpg", alt="")
+            div.types#iris
+                a(href='/about')
+                    img(src="../static/iris.jpg", alt="")
+            div.types#folk
+                a(href='/about') 
+                    img(src="../static/folk.jpg", alt="")
+                
+      
+    footer#footer 
+        | This is footer
+    script
+        include ../static/index.js
