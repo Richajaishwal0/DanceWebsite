@@ -30,7 +30,7 @@ html
             button.btn2(type="button")
                 |Learn More
     div.apply
-        form( action='/' id="form" method="post" ) 
+        form( action='/' id="form" method="post" onsubmit="Greet()") 
                 label(for="name") Name:
                 br
                 input#name(type="text" name="name" required)
@@ -55,14 +55,14 @@ html
             video(autoplay, loop, muted)
                 source(src="../static/bg.mp4",type="video/mp4")
             h1 Why us? 
-            div.boxes1
-                div.design1
-                div.design2
-                div.design3
-                div.design4
-                div.design5
-                div.design6
-                div.design7
+            //- div.boxes1
+            //-     div.design1
+            //-     div.design2
+            //-     div.design3
+            //-     div.design4
+            //-     div.design5
+            //-     div.design6
+            //-     div.design7
         div.info
             div.types#hiphop 
                 a(href='/about')

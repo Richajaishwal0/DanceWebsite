@@ -54,7 +54,7 @@
 #introSection{
     color:white;
     background: center / cover no-repeat url('/static/bg.jpg');
-    height:45vh;
+    height:60vh;
     font-size: 40px;
     display: flex;
     flex-direction: column;
@@ -118,10 +118,11 @@
 .apply
 {
     position:absolute;
-    left:45%;
+    left:%;
     top:20%;
     padding:50px;
     background: white;
+    display: none;
 }
 .apply input{
     padding:10px 15px;
@@ -129,13 +130,29 @@
     font-style: normal;
    
 }
+.apply input{
+    padding:10px 15px;
+    width: 240px;
+    font-style: normal;
+   
+}
+.apply label{
+    Color:transparent;
+    background: linear-gradient(135deg, #FF6F61, #e46533, #ef4399, #800080);
+    background-clip: text; /* Clips background to the text */
+    -webkit-background-clip: text; /* Ensures compatibility with Webkit browsers */
+    -webkit-text-fill-color: transparent; 
+
+}
 .apply .btn{
     padding:8px 100px;
     font-style: normal;
     background: yellow;
     border:2px solid yellow;
     border-radius: 5px;
-
+}
+.apply .btn:hover{
+    background: linear-gradient(135deg, #e8887f, #e28e6d, #ea66a8, #ec56ec);
 }
 @keyframes move{
     0% {
