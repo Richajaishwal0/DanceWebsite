@@ -72,6 +72,7 @@
 }
 #navbar{
     position: fixed;
+    z-index: 1;
     width: 100vw;
     background: radial-gradient(circle at var(--circle1-x,top right),#f04343, 6%, transparent 2%),
     radial-gradient(circle at var(--circle3-x,center),#f04343, 6%, transparent 2%), 
@@ -113,6 +114,28 @@
     cursor:pointer;
     animation: move 20s infinite ease-in-out;
     /* position: relative; */
+}
+.apply
+{
+    position:absolute;
+    left:45%;
+    top:20%;
+    padding:50px;
+    background: white;
+}
+.apply input{
+    padding:10px 15px;
+    width: 240px;
+    font-style: normal;
+   
+}
+.apply .btn{
+    padding:8px 100px;
+    font-style: normal;
+    background: yellow;
+    border:2px solid yellow;
+    border-radius: 5px;
+
 }
 @keyframes move{
     0% {

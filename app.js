@@ -32,7 +32,11 @@ app.get('/contact',(req,res)=>{
     const params ={};
     res.status(200).render('contact.pug',params);
     })
-                           
+
+app.post('/',(req,res)=>{
+        details=req.body;
+        console.log(details);
+})
 app.listen(port,()=>{
     console.log(`Listening in port ${port}`);
 })
