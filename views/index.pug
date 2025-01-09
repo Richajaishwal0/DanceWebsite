@@ -54,7 +54,7 @@ html
         div.dance 
             video(autoplay, loop, muted)
                 source(src="../static/bg.mp4",type="video/mp4")
-            h1 Why us? 
+            h1 Explore 
             //- div.boxes1
             //-     div.design1
             //-     div.design2
@@ -90,7 +90,43 @@ html
                     img(src="../static/folk.jpg", alt="")
                 
       
-    footer#footer 
-        | This is footer
+    footer#footer
+        div.head Why Choose us?
+
+        div.eno-das 
+            div.sec#sec1
+                a(href="/") 
+                    <i class="fa-solid fa-medal"></i>
+                h2 Achievements
+            div.sec#sec2
+                a(href="/")
+                    <i class="fa-solid fa-signal"></i>
+                h2 Experienced
+            div.sec#sec3
+                a(href="/")
+                    <i class="fa-solid fa-guarani-sign"></i>
+                h2 Guarantee 
+            div.sec#sec4
+                a(href="/")
+                    <i class="fa-solid fa-location-dot"></i>
+                h2 Location
+            div.sec#sec5
+                a(href="/")
+                    <i class="fa-solid fa-comment"></i>
+                h2 Reveiws
+            div.mapouter
+                div.gmap_canvas
+                    iframe.gmap_iframe(
+                            frameborder="0",
+                            scrolling="no",
+                            marginheight="0",
+                            marginwidth="0",
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    )
+                    a(href="https://sprunkiplay.com/") Sprunki Game
+
+
     script
         include ../static/index.js
+    script(src="https://kit.fontawesome.com/0a58ac101f.js" crossorigin="anonymous")
+    
