@@ -107,8 +107,7 @@ html
                     <i class="fa-solid fa-guarani-sign"></i>
                 h2 Guarantee 
             div.sec#sec4
-                a(href="/")
-                    <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-location-dot"></i>
                 h2 Location
             div.sec#sec5
                 a(href="/")
@@ -116,15 +115,20 @@ html
                 h2 Reveiws
             div.mapouter
                 div.gmap_canvas
-                    iframe.gmap_iframe(
-                            frameborder="0",
-                            scrolling="no",
-                            marginheight="0",
-                            marginwidth="0",
-                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    iframe#gmap_canvas(
+                        width="820"
+                        height="560"
+                        src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
                     )
-                    a(href="https://sprunkiplay.com/") Sprunki Game
-
+                    a(href="https://online.stopwatch-timer.net/") timer stopwatch
+                    br
+                    a(href="https://textcaseconvert.com/") 
+                    br
+                    a(href="https://www.embedmaps.co") google maps html code
 
     script
         include ../static/index.js

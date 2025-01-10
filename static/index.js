@@ -21,3 +21,16 @@ function Greet()
     }
     alert("Thanks for filling up the form. We will contact you!!")
 }
+let loc=document.getElementById("sec4")
+let map=document.querySelector(".mapouter")
+loc.addEventListener("click",function a(){
+
+    if (map.style.display=="none")
+    {
+     map.style.display="block";   
+    }
+    else 
+    {
+        map.style.display="none";
+    }
+})

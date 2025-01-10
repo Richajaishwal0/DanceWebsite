@@ -467,25 +467,57 @@ video {
   color: rgb(0, 255, 213);
 }
 
-#sec4 a i {
+#sec4 i {
   color: rgb(255, 8, 0);
+}
+#sec4 i:hover {
+  cursor:pointer;
 }
 #sec5 a i {
   color: rgb(196 209 24);
 }
 .mapouter {
+  margin:0;
   position: relative;
   text-align: right;
   width: 600px;
   height: 400px;
+  display: none;
 }
 .gmap_canvas {
+  margin:0;
   overflow: hidden;
   background: none !important;
   width: 600px;
   height: 400px;
 }
 .gmap_iframe {
-  width: 600px !important;
+  margin:0;
+  width:600px !important;
   height: 400px !important;
+}
+
+/* About page styles */
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 50vh;
+}
+.faso-de{
+  margin-top: 80px;
+  background:  linear-gradient(to right, #e45323, #077074);
+}
+.con-tent{
+  margin:auto;
+}
+.con-tent h1{
+  background:transparent;
+  position: absolute;
+  left:40%;
+  color: white;
+  font-style: normal;
+  color:#d0f0d8;
+  text-shadow: 0px 2px 2px black;
 }
