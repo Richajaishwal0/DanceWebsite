@@ -1,36 +1,22 @@
 let apply=document.querySelector(".apply");
+let loc=document.querySelector("#sec4")
+let map=document.querySelector(".mapouter")
+
+function toggleDisplay(element) {
+    element.style.display = element.style.display === "none" ? "block" : "none";
+}
 function showForm()
 {
-    if (apply.style.display=="none")
-    {
-        apply.style.display="block";
-    }
-    else{
-        apply.style.display="none";
-    }
+    toggleDisplay(apply);
 
 }
 function Greet()
 {   
-    if (apply.style.display=="none")
-    {
-        apply.style.display="block";
-    }
-    else{
-        apply.style.display="none";
-    }
+    toggleDisplay(apply);
     alert("Thanks for filling up the form. We will contact you!!")
 }
-let loc=document.getElementById("sec4")
-let map=document.querySelector(".mapouter")
-loc.addEventListener("click",function a(){
 
-    if (map.style.display=="none")
-    {
-     map.style.display="block";   
-    }
-    else 
-    {
-        map.style.display="none";
-    }
+loc.addEventListener("click",function aS(){
+
+    toggleDisplay(map);
 })
