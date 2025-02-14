@@ -521,3 +521,33 @@ video {
   color:#d0f0d8;
   text-shadow: 0px 2px 2px black;
 }
+.information 
+{
+  height:60vh;
+  width: 40vw;
+  position: absolute;
+  left:30%;
+  top: 20%;
+  background: black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.information form 
+{
+  
+  padding: 5px;
+
+}
+label 
+{
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  padding: 5px;
+}
+.form input {
+ padding: 5px;
+ border-radius: 5px;
+ font-style: normal;
+}
