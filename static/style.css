@@ -551,3 +551,27 @@ label
  border-radius: 5px;
  font-style: normal;
 }
+.main-fea
+{
+  text-align: center;
+  margin:20px;
+  
+}
+.main-fea h2
+{
+  font-size: 30px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:#d44848;
+}
+.feas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.di-vi
+{
+  width:300px;
+  height: 300px;
+  background: red;
+  margin:50px;
+}
